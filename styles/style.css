@@ -3,17 +3,22 @@
     padding: 0;
 }
 
+:root {
+    --corTexto: #202020e3;
+}
+
 body {
     text-align: center;
+    color: var(--corTexto);
+}
+
+header {
+    margin: 30px 0;
 }
 
 #calculadora {
     width: 40%;
     margin: 0 auto;
-}
-
-header {
-    margin: 30px 0;
 }
 
 #display {
@@ -32,7 +37,7 @@ header {
 
 #teclado button{
     padding: 15px;
-    border: solid 1px #0000007c;
+    border: solid 1px #00000098;
     border-radius: 2px;
 }
 
@@ -41,6 +46,23 @@ header {
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.24);
 }
 
-.teclasDestaque {
+.teclasOperacoes {
     background-color: rgba(155, 152, 152, 0.425);
+}
+
+footer {
+    margin: 50px 0px;
+    font-size: 0.9rem;
+}
+
+.links {
+    text-decoration: none;
+    color: var(--corTexto);
+    font-weight: 600;
+}
+
+.links:hover {
+    font-weight: 900;
+    color: rgb(31, 30, 30);
+    transition: 0.5s ease;
 }
